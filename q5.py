@@ -11,7 +11,7 @@ def bin_search(C, citizen_votes):
         functions = []
         merged = []
         t = (start + end) / 2
-        for i in range(1, len(citizen_votes)):
+        for i in range(1, len(citizen_votes)):  # creating linear functions as we learned
             functions.append(C * min(1, i * t))
         # print("\nt:", t, "linear functions:", functions)
         for i in range(len(citizen_votes[0])):  # iterating each topic, merging with functions
